@@ -10,3 +10,5 @@ type User struct {
 	Avatar string
 	orm.SoftDeletes
 }
+
+

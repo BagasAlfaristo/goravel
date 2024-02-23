@@ -18,4 +18,10 @@ func Web() {
 			"version": support.Version,
 		})
 	})
+
+	facades.Route().Get("/index", func(ctx http.Context) http.Response {
+		return ctx.Response().View().Make("index.html", map[string]any{
+			"version": support.Version,
+		})
+	})
 }
